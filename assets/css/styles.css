@@ -377,6 +377,7 @@ img {
   font-size: var(--small-font-size);
   transition: 0.1s;
   color: var(--text-color);
+  text-decoration: none;
 }
 .home__information:hover {
   color: var(--title-color);
