@@ -1,6 +1,9 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -373,6 +376,7 @@ img {
   align-items: center;
   font-size: var(--small-font-size);
   transition: 0.1s;
+  color: var(--text-color);
 }
 .home__information:hover {
   color: var(--title-color);
@@ -565,7 +569,7 @@ img {
   border-radius: 0.5rem;
   transition: 0.1s;
   font-weight: var(--font-medium);
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
   cursor: default;
 }
 
@@ -677,7 +681,7 @@ img {
     display: inline-block;
   }
 
-  section-title,
+  .section-title,
   .profile__description {
     text-align: initial;
   }
@@ -694,9 +698,16 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .languages__content {
-    grid-template-columns: repeat(3, max-content);
+  .languages__section {
+    grid-template-columns: repeat(1, max-content);
     column-gap: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .skills__content {
+    display: inline-block;
   }
 
   .interest__container {
