@@ -12,6 +12,8 @@
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 
     <title>Andera Singgih Pratama</title>
   </head>
@@ -112,6 +114,7 @@
 
             <!-- Button to generate and download the pdf. Available for desktop. -->
             <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button" ></i>
+            
           </section>
 
           <!--========== SOCIAL ==========-->
@@ -148,8 +151,7 @@
           <section class="profile section" id="profile">
             <h2 class="section-title">Profile</h2>
 
-            <p class="profile__description">Creative designer proficient in Adobe Photoshop, After Effects, Premiere, and Illustrator. Strong skill set with fast learning ability, hardworking nature, and disciplined approach. capable o excelling independentv or as part ot a team. Strona public speakina and ettective communication skis
-              Dedication and expertise will be a valuable asset to this company.
+            <p class="profile__description">Creative designer proficient in Adobe Photoshop, After Effects, Premiere, and Illustrator. Strong skill set with a fast learning ability, hardworking nature, and disciplined approach. Capable of excelling independently or as part of a team. Strong public speaking and effective communication skills. Dedication and expertise will be a valuable asset to the company.
             </p>
           </section>
 
@@ -520,5 +522,34 @@
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <script>
+      window.onload = function () {
+        const resumeButton = document.getElementById('resume-button');
+        const areaCv = document.getElementById('area-cv');
+    
+        if (!resumeButton || !areaCv) {
+          console.error("ID resume-button atau area-cv tidak ditemukan!");
+          return;
+        }
+    
+        resumeButton.addEventListener('click', () => {
+          console.log("Tombol diklik, mulai generate PDF...");
+    
+          const opt = {
+            margin:       0,
+            filename:     'resume.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+          };
+    
+          html2pdf().set(opt).from(areaCv).save();
+        });
+      };
+    </script>
+
   </body>
 </html>
