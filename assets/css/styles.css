@@ -4,6 +4,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+i {
+  color: var(--text-color);
+}
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
