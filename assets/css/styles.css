@@ -266,6 +266,7 @@ img {
   background-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  visibility: hidden;
 }
 
 /*========== NAV ==========*/
@@ -274,6 +275,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 968px) {
@@ -412,6 +414,7 @@ img {
   transition: 0.1s;
   font-weight: var(--font-medium);
   margin-top: var(--mb-2);
+  visibility: hidden;
 }
 
 .home__button-movil:hover {
