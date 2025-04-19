@@ -750,7 +750,7 @@ img {
 
 .show-scroll {
   visibility: visible;
-  bottom: 5rem;
+  bottom: 2rem;
   transition: 0.2;
 }
 
@@ -890,4 +890,57 @@ ol {
   .skills__data {
     margin: 0.1rem;
   }
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(70px); /* Menyembunyikan elemen sedikit */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transisi animasi */
+}
+
+.section.visible {
+  opacity: 1;
+
+  transform: translateY(0); /* Mengembalikan elemen ke posisi normal */
+}
+
+/* Mengatur container spinner */
+.refresh-container {
+  position: fixed; /* Menempatkan spinner di tengah layar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Latar belakang transparan */
+  z-index: 9999; /* Menempatkan di atas elemen lain */
+}
+
+/* Membuat spinner */
+.spinner {
+  border: 5px solid #f3f3f3; /* Warna latar belakang spinner */
+  border-top: 5px solid var(--text-color); /* Warna spinner */
+  border-radius: 50%; /* Bentuk bulat */
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animasi putar */
+}
+
+/* Animasi putar spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Gaya teks "Refreshing..." */
+.refresh-container p {
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
 }

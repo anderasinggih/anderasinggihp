@@ -103,3 +103,41 @@ function removeScale() {
 }
 /*==================== GENERATE PDF ====================*/
 // PDF generated area
+
+// Function to check if element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Menambahkan animasi ketika elemen masuk viewport
+function handleScroll() {
+  const sections = document.querySelectorAll(".section");
+  sections.forEach((section) => {
+    if (isInViewport(section)) {
+      section.classList.add("visible"); // Menambahkan kelas 'visible' untuk memulai animasi
+    }
+  });
+}
+
+// Menambahkan event listener scroll
+window.addEventListener("scroll", handleScroll);
+
+// Memanggil fungsi saat halaman pertama kali dimuat
+window.addEventListener("load", handleScroll);
+
+// Menampilkan spinner saat halaman dimuat
+window.addEventListener("load", function () {
+  document.querySelector(".refresh-container").style.display = "flex"; // Menampilkan spinner
+});
+
+// Menghilangkan spinner setelah beberapa detik (simulasi refresh selesai)
+setTimeout(function () {
+  document.querySelector(".refresh-container").style.display = "none"; // Menyembunyikan spinner
+}, 100); // Sesuaikan waktu dengan durasi animasi refresh
