@@ -28,6 +28,7 @@ i {
   --normal-font-size: 0.938rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
+  --super-small-font-size: 0.73rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -562,7 +563,7 @@ img {
   display: inline-block;
   align-items: center;
   margin-bottom: 0.5rem;
-  font-size: var(--smaller-font-size);
+  font-size: var(--super-small-font-size);
 }
 
 .skills__box {
@@ -570,10 +571,10 @@ img {
   align-items: center;
   border: 2px solid var(--text-color);
   color: var(--title-color);
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   transition: 0.1s;
-  font-weight: var(--font-medium);
+  font-weight: var(--font-mediu);
   margin-top: 0.1rem;
   cursor: default;
 }
