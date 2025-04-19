@@ -89,7 +89,7 @@
                 <div>
                   <a
                     download=""
-                    href="#"
+                    href="assets/pdf/cv.pdf"
                     class="home__button-movil"
                     >Download</a
                   >
@@ -113,7 +113,7 @@
             <i class='bx bx-moon change-theme' title="Theme" id="theme-button" ></i>
 
             <!-- Button to generate and download the pdf. Available for desktop. -->
-            <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button" ></i>
+            <button href="assets/pdf/cv.pdf"class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button" ></button>
             
           </section>
 
@@ -452,7 +452,7 @@
                       <p class="taglineprojects__box">Photoshop</p>
                       <p class="taglineprojects__box">Illustrator</p>
                       <p class="taglineprojects__box">Premiere Pro</p>
-                      <p class="taglineprojects__box">After Effects</p>
+                      <p class="taglineprojects__box">Corel Draw</p>
                      </div>
                   </div>
 
@@ -464,9 +464,9 @@
                     <b class="projects__title">Unrest Photography</b>
 
                     <div class="projects__description">A photography vendor that provides services for various fields such as weddings, graduations, events, and more.<p class="taglineprojects__box">Photoshop</p>
-                      <p class="taglineprojects__box">Illustrator</p>
+                      <p class="taglineprojects__box">Lightroom</p>
                       <p class="taglineprojects__box">Premiere Pro</p>
-                      <p class="taglineprojects__box">After Effects</p>
+                      <p class="taglineprojects__box">Photoshop</p>
                      </div>
                   </div>
 
@@ -525,31 +525,6 @@
 
     <script src="assets/js/html2pdf.bundle.min.js"></script>
 
-    <script>
-      window.onload = function () {
-        const resumeButton = document.getElementById('resume-button');
-        const areaCv = document.getElementById('area-cv');
-    
-        if (!resumeButton || !areaCv) {
-          console.error("ID resume-button atau area-cv tidak ditemukan!");
-          return;
-        }
-    
-        resumeButton.addEventListener('click', () => {
-          console.log("Tombol diklik, mulai generate PDF...");
-    
-          const opt = {
-            margin:       0,
-            filename:     'resume.pdf',
-            image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2 },
-            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-          };
-    
-          html2pdf().set(opt).from(areaCv).save();
-        });
-      };
-    </script>
 
   </body>
 </html>
