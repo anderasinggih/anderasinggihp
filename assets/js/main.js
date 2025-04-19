@@ -125,3 +125,9 @@ function handleScroll() {
     }
   });
 }
+
+// Menambahkan event listener scroll
+window.addEventListener("scroll", handleScroll);
+
+// Memanggil fungsi saat halaman pertama kali dimuat
+window.addEventListener("load", handleScroll);
