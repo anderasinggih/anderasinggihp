@@ -679,18 +679,13 @@ img {
   text-decoration: underline;
 }
 
-.taglineprojects__box:hover {
-  background-color: var(--text-color);
-  color: var(--container-color);
-}
-
 .projects__box:hover .taglineprojects__box {
   background-color: var(--text-color);
   color: var(--container-color);
 }
 
 .projects__box:hover .taglineprojects__box:hover {
-  background-color: var(--container-color);
+  background-color: var(--container-color-alt);
   color: var(--text-color);
 }
 
