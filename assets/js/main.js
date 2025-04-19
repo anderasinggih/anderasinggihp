@@ -125,19 +125,3 @@ function handleScroll() {
     }
   });
 }
-
-// Menambahkan event listener scroll
-window.addEventListener("scroll", handleScroll);
-
-// Memanggil fungsi saat halaman pertama kali dimuat
-window.addEventListener("load", handleScroll);
-
-// Menampilkan spinner saat halaman dimuat
-window.addEventListener("load", function () {
-  document.querySelector(".refresh-container").style.display = "flex"; // Menampilkan spinner
-});
-
-// Menghilangkan spinner setelah beberapa detik (simulasi refresh selesai)
-setTimeout(function () {
-  document.querySelector(".refresh-container").style.display = "none"; // Menyembunyikan spinner
-}, 100); // Sesuaikan waktu dengan durasi animasi refresh
