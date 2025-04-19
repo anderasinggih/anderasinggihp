@@ -372,14 +372,6 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.home__img:active {
-  transform: scale(120%);
-  border-radius: 10%;
-  justify-self: center;
-  align-self: center;
-  margin-bottom: var(--mb-1);
-}
-
 .home__title {
   font-size: var(--h1-font-size);
 }
