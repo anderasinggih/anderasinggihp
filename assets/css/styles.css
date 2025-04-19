@@ -366,7 +366,6 @@ img {
 
 .home__img:hover {
   transform: scale(120%);
-
   border-radius: 10%;
   justify-self: center;
   align-self: center;

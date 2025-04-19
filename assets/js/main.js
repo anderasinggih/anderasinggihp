@@ -103,14 +103,3 @@ function removeScale() {
 }
 /*==================== GENERATE PDF ====================*/
 // PDF generated area
-
-const image = document.querySelector(".home__img");
-const resume = document.querySelector("body");
-
-image.addEventListener("mouseenter", () => {
-  resume.classList.add("blur"); // Blur hanya ke bagian resume
-});
-
-image.addEventListener("mouseleave", () => {
-  resume.classList.remove("blur"); // Kembali normal
-});
