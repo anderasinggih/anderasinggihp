@@ -104,7 +104,6 @@ body.scale-cv {
   left: 0;
   font-size: 1.2rem;
   color: var(--text-color);
-  cursor: pointer;
   border-width: 0px;
   /* visibility: hidden; */
 }
