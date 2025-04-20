@@ -229,10 +229,15 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  margin-top: 1rem;
 }
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+}
+
+.resume__right {
+  margin-top: 1.5rem;
 }
 
 .section-title {
@@ -450,6 +455,7 @@ img {
 /*========== PROFILE ==========*/
 .profile__description {
   text-align: center;
+  font-size: var(--small-font-size);
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
