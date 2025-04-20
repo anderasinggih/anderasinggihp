@@ -125,15 +125,3 @@ function handleScroll() {
     }
   });
 }
-
-const skillBoxes = document.querySelectorAll(".skills__box");
-
-skillBoxes.forEach((box) => {
-  box.addEventListener("click", () => {
-    box.classList.add("clicked");
-
-    setTimeout(() => {
-      box.classList.remove("clicked");
-    }, 100); // Sesuai dengan transition time
-  });
-});
