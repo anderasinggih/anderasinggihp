@@ -460,6 +460,7 @@ img {
 .social__icon {
   font-size: 1.2rem;
   margin-right: 0.25rem;
+  text-decoration: none;
 }
 
 /*========== PROFILE ==========*/
@@ -492,12 +493,12 @@ img {
 }
 
 .education__content:hover .education__rounder {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: var(--text-color);
 }
 
 .experience__content:hover .experience__rounder {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: var(--text-color);
 }
 
@@ -530,17 +531,15 @@ img {
 }
 
 .education__title:hover {
-  transform: scale(1.05);
   transition: 0.1s;
-  padding-left: 1rem;
+  padding-left: 0.1rem;
   cursor: text;
   text-decoration: underline;
 }
 
 .experience__title:hover {
-  transform: scale(1.05);
   transition: 0.1s;
-  padding-left: 1rem;
+
   cursor: text;
   text-decoration: underline;
 }
