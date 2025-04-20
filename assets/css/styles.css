@@ -890,16 +890,4 @@ ol {
   .skills__data {
     margin: 0.1rem;
   }
-
-  .section {
-    opacity: 0;
-    transform: translateY(70px); /* Menyembunyikan elemen sedikit */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transisi animasi */
-  }
-
-  .section.visible {
-    opacity: 1;
-
-    transform: translateY(0); /* Mengembalikan elemen ke posisi normal */
-  }
 }
