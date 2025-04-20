@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css");
 
 html {
   scroll-behavior: smooth;
@@ -79,11 +80,20 @@ body.dark-theme {
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
-.change-theme:hover {
+#theme-button:hover {
   color: var(--title-color);
+  transform: scale(1.05);
+}
+
+.generate-pdf:hover {
+  transform: scale(1.05);
+}
+
+.profile__description:hover {
+  text-decoration: underline;
 }
 
 /*========== Font size variables to scale cv ==========*/
@@ -105,7 +115,7 @@ body.scale-cv {
   font-size: 1.2rem;
   color: var(--text-color);
   border-width: 0px;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .generate-pdf:hover {
@@ -613,6 +623,12 @@ img {
   margin-top: 0.1rem;
   cursor: default;
   background-color: var(--container-color-alt);
+}
+
+.skills__box.clicked {
+  background-color: var(--text-color);
+  color: var(--container-color);
+  transform: scale(1.1);
 }
 
 .taglineprojects__box {
