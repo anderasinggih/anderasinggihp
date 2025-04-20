@@ -683,6 +683,10 @@ img {
   cursor: text;
 }
 
+.projects__box small {
+  color: var(--text-color);
+}
+
 .projects__title:hover {
   text-decoration: underline;
 }
