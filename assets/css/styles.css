@@ -655,6 +655,7 @@ img {
 .projects__title {
   font-size: var(--normal-font-size);
   margin-bottom: 1.3rem;
+  color: var(--text-color);
 }
 
 .projects__name {
