@@ -364,14 +364,6 @@ img {
   transition: 0.2s;
 }
 
-.home__img:hover {
-  transform: scale(120%);
-  border-radius: 10%;
-  justify-self: center;
-  align-self: center;
-  margin-bottom: var(--mb-1);
-}
-
 .home__title {
   font-size: var(--h1-font-size);
 }
@@ -844,6 +836,14 @@ img {
 
   .skills__data {
     margin: 0.1rem;
+  }
+
+  .home__img:hover {
+    transform: scale(120%);
+    border-radius: 10%;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: var(--mb-1);
   }
 }
 
